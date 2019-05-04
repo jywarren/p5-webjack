@@ -21,7 +21,7 @@ function receiveSensorData(handler, webjackProfile) {
           return parseFloat(i)
         }); // so we break it apart using the commas, and make them floats
 
-        handler(data);
+        handler(data, connection);
       });
 
     });
